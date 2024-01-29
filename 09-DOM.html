@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Lesson 8 DOM
+        </title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <button class="btn" id="btn" name="btn">Submit</button>
+        <button class="js-btn-2">Submit_Second</button>
+        <script>
+ 
+            /*
+            console.log(document.body.innerHTML);
+            console.log(document.title);
+            console.log(document.body);
+            document.body.innerHTML = "<button> New Button </button>";
+            document.title="DOM";*/
+
+            console.log(document.querySelector('button'));
+           console.log(document.querySelector('btn'));
+           console.log(document.querySelector('button').innerHTML);
+            document.querySelector('button').innerHTML = 'NEW';
+
+           const btnElement= document.querySelector('.js-btn-2');
+           console.log(btnElement);
+            
+
+            
+
+        </script>
+    </body>
+</html>

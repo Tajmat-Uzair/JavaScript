@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Lesson 7 Functions
+        </title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <script>
+            function f1()
+            {
+                let a=10;
+                let b=10;
+                a>b?console.log("Greater"):console.log("Lesser");
+            }
+
+            f1();
+            f1();
+            let result=1;
+            while(result)
+            {
+                f1();
+                
+                result +=1;
+                if(result===4)
+                {
+                    break;
+                }
+            }
+
+            let c=23456789;
+            let d;
+            function f2(c)
+            {
+                return c*0.32;
+            }
+
+            console.log(` Tax to be payed on ${c} is ${f2(c)}`);
+
+            function c3(c,d =0.32)
+            {
+                return c*d;
+            }
+
+            console.log(` Tax to be payed on ${c} & tax percent ${d} is ${c3(c,d)}`);
+
+        </script>
+    </body>
+</html>

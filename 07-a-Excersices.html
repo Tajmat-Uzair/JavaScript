@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Lesson 8 Objects
+        </title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <script>
+            function greet(name)
+            {
+                if(name == undefined)
+                {
+                    console.log(`Hi there !`)
+                }
+                else
+                console.log(`Hello ${name} `)
+            }
+
+            greet("XYZ")
+            greet();
+
+
+            function converToFarhenhiet(celsius)
+            {
+                return (celsius*9/5)+32;
+            }
+
+           console.log(converToFarhenhiet(25)) 
+
+            function converToCelsiys(fahrehiet)
+            {
+                return (fahrehiet-32)*5/9;
+            }
+
+            console.log(converToCelsiys(86)) 
+
+            function convertTemperature(degrees,unit)
+            {
+                let string=" "
+                let output;
+                if(unit == 'C')
+                {
+                    output =converToCelsiys(degrees);
+                    
+                }
+                else if(unit == 'F')
+                {
+                    output =converToFarhenhiet(degrees);
+                }
+
+                return `${output}${unit}`
+            }
+
+            console.log(convertTemperature(86,'C')) 
+
+        </script>
+    </body>
+</html>

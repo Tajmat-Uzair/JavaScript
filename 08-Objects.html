@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Lesson 8 Objects
+        </title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <script>
+            const product={
+                name :'Uzair',
+                salary:123456789
+            }
+            console.log(localStorage.getItem('message'));
+
+            console.log(product);
+            console.log(product.name);
+            console.log(product.salary);
+
+            product.salary = 9999999;
+            console.log(`Updated Salary ${product.salary}`);
+
+            product.newProperty=true;
+            console.log(product);
+            
+            delete product.newProperty;
+
+            console.log(product);
+
+            const product2={
+                name:'shirt',
+                ['delivery-time']:'1 day',
+                rating:{
+                    stars:4.7,
+                    count:89
+                },
+
+                fun: function f1()
+                {
+                    let a=10
+                    let b=29
+                    console.log(a+b)
+                }
+
+
+            }
+
+
+            console.log(product2)
+            console.log(product2.rating.count)
+            console.log(product2['name'])
+            console.log(product2['delivery-time'])
+            console.log(product.name)
+            product2.fun()
+
+
+           
+            console.log( JSON.stringify(product2))
+            console.log(JSON .parse(JSON.stringify(product2)))
+
+            localStorage.setItem('message','Hello');
+
+
+            console.log('hello'.toUpperCase());
+
+            const object1={
+                message:'hello'
+            }
+
+            const object2=object1;
+            console.log(object2)
+
+            object1.message='Good Job'
+
+            console.log(object2 === object1)
+            console.log( product == product2)
+
+
+            const object3={
+                message:'Good',
+                price:799
+            }
+           const { message,price } =object3
+           console.log(message,price)
+
+
+           const object5={
+            message:message,
+           }
+
+           console.log(object5)
+        </script>
+    </body>
+</html>
