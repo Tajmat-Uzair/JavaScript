@@ -19,6 +19,7 @@
             top: 0;
             left: 0;
             right: 0;
+            z-index: 100;
         }
         .left-side
         {
@@ -113,10 +114,14 @@
   border: 1px solid #CCC;
   margin: 40px 0;
   position: relative;
-  width: 1800px;
-  height: 540px;
+  top: 40px;
+  left: 0px;
+  right: 30px;
+  height: 500px;
   margin: 80px auto;
-  perspective: 1000px;
+  perspective: 80000px;
+  z-index: 0;
+  overflow: hidden;
 }
 
 .carousel {
@@ -144,11 +149,12 @@
   color: white;
   text-align: center;
   transition: transform 1s, opacity 1s;
+  overflow: hidden;
 }
 
 .carousel__cell:nth-child(9n+1) { background-image: url("/JavaScript/thumbnails/google.png");}
-.carousel__cell:nth-child(9n+2) { background-image: url("thumbnails/jelly-pic.jpg"); }
-.carousel__cell:nth-child(9n+3) {background-image: url("thumbnails//jelly.jpg"); }
+.carousel__cell:nth-child(9n+2) { background-color: #FF6666; }
+.carousel__cell:nth-child(9n+3) {background-color: aqua; }
 .carousel__cell:nth-child(9n+4) { background: hsla(120, 100%, 50%, 0.8); }
 .carousel__cell:nth-child(9n+5) { background: hsla(160, 100%, 50%, 0.8); }
 .carousel__cell:nth-child(9n+6) { background: hsla(200, 100%, 50%, 0.8); }
@@ -156,15 +162,15 @@
 .carousel__cell:nth-child(9n+8) { background: hsla(280, 100%, 50%, 0.8); }
 .carousel__cell:nth-child(9n+0) { background: hsla(320, 100%, 50%, 0.8); }
 
-.carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(288px); }
-.carousel__cell:nth-child(2) { transform: rotateY( 40deg) translateZ(288px); }
+.carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(288px);  width: 1000px; height: 93%;}
+.carousel__cell:nth-child(2) { transform: rotateY(  70deg) translateZ(288px); width: 1000px; height: 93%; margin-left: 850px;}
 .carousel__cell:nth-child(3) { transform: rotateY( 80deg) translateZ(288px); }
 .carousel__cell:nth-child(4) { transform: rotateY(120deg) translateZ(288px); }
 .carousel__cell:nth-child(5) { transform: rotateY(160deg) translateZ(288px); }
 .carousel__cell:nth-child(6) { transform: rotateY(200deg) translateZ(288px); }
 .carousel__cell:nth-child(7) { transform: rotateY(240deg) translateZ(288px); }
 .carousel__cell:nth-child(8) { transform: rotateY(280deg) translateZ(288px); }
-.carousel__cell:nth-child(9) { transform: rotateY(320deg) translateZ(288px); }
+.carousel__cell:nth-child(9) { transform: rotateY(70deg) translateZ(288px); width: 1000px; height: 93%; margin-right: 1950px; }
 
 
 
